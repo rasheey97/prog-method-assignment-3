@@ -68,7 +68,7 @@ public class Breakout extends GraphicsProgram {
 		
 	
     //create brick by first set the coordinate
-	Private void getBricks(){
+	//Private void getBricks(){
 	int x= 2;
 	int y = BRICK_Y_OFFSET;
 	
