@@ -74,19 +74,7 @@ public class Breakout extends GraphicsProgram {
 	
 	///insert the statement for  the row 
 	for(int row=0; row<NBRICK_ROWS;row++){
-	// insert the statement for the row 
-	for(int column=0; column<NBRICKS_PER_ROW; column++){
-		
-	
-	 GRect Bricks = new GRect(x, y,BRICK_WIDTH,BRICK_HEIGHT);
-	Bricks.setFilled(true);
-	add (Bricks);
-	
-	
-	x+= BRICK_WIDTH+BRICK_SEP;
-	}
-	y+= BRICK_HEIGHT+BRICK_SEP ;
-	x=BRICK_SEP/2;
+ 
 	}
 	
 		
