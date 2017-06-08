@@ -46,6 +46,9 @@ public class Breakout extends GraphicsProgram {
 	  (WIDTH - (NBRICKS_PER_ROW - 1) * BRICK_SEP) / NBRICKS_PER_ROW;
 
 /** Height of a brick */
+	 //Height of a brick */
+	    private static final int BRICK_HEIGHT = 8;
+	 
 
 
 /** Radius of the ball in pixels */
@@ -60,17 +63,25 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() { 
+		
+	}
     //create brick by first set the coordinate 
 	int x=getWidth()-((APPLICATION_WIDTH)-BRICK_WIDTH);
 	int y =getHeight ()- ((APPLICATION_HEIGHT)-BRICK_Y_OFFSET );
 	///insert the statement for  the row 
 	for(int row=0; row<NBRICK_ROWS;row++){
 	// insert the statement for the row 
-	for(int column=0; column<NBRICKS_PER_ROW;column++);
+	for(int column=0; column<NBRICKS_PER_ROW;column++){
+		
+	
+	 GRect Bricks = new GRect(x, y,BRICK_WIDTH,BRICK_HEIGHT);
+	Bricks.setFilled(true);
+	add (Bricks);
 	
 	
-	
-			
+	x+= BRICK_WIDTH+BRICK_SEP;
+	y+= BRICK_HEIGHT-BRICK_SEP ;
+	x=BRICK_SEP/2;
 		
 		
 		
