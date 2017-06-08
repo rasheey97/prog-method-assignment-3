@@ -61,17 +61,18 @@ public class Breakout extends GraphicsProgram {
 	private static final int NTURNS = 3;
 
 /* Method: run() */
-/** Runs the Breakout program. */
+ //Runs the Breakout program. 
 	public void run() { 
 		
-	}
+	
     //create brick by first set the coordinate 
 	int x=getWidth()-((APPLICATION_WIDTH)-BRICK_WIDTH);
-	int y =getHeight ()- ((APPLICATION_HEIGHT)-BRICK_Y_OFFSET );
+	int y = getHeight() -((APPLICATION_HEIGHT)-BRICK_HEIGHT);
+	
 	///insert the statement for  the row 
 	for(int row=0; row<NBRICK_ROWS;row++){
 	// insert the statement for the row 
-	for(int column=0; column<NBRICKS_PER_ROW;column++){
+	for(int column=0; column<NBRICKS_PER_ROW; column++){
 		
 	
 	 GRect Bricks = new GRect(x, y,BRICK_WIDTH,BRICK_HEIGHT);
