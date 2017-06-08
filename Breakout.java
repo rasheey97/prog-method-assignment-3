@@ -86,11 +86,20 @@ public class Breakout extends GraphicsProgram {
 	}
 	x=BRICK_SEP/2;
 	}
+		getPaddle();
 		
-		
-	}
+			
+		}
+	private void getPaddle(){
+	int i = (getWidth()/2- PADDLE_WIDTH/2);
+	int k= (getHeight()- PADDLE_Y_OFFSET -PADDLE_HEIGHT);
+	GRect PADDLE = new GRect(i, k,PADDLE_WIDTH,PADDLE_HEIGHT);
+		PADDLE.setFilled(true);
+		add (PADDLE);
+	
 	}
 
+}
 
 	
 	 
