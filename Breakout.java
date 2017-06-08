@@ -46,7 +46,7 @@ public class Breakout extends GraphicsProgram {
 	  (WIDTH - (NBRICKS_PER_ROW - 1) * BRICK_SEP) / NBRICKS_PER_ROW;
 
 /** Height of a brick */
-	private static final int BRICK_SEP = 8;
+
 
 /** Radius of the ball in pixels */
 	private static final int BALL_RADIUS = 10;
@@ -60,18 +60,26 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
 /** Runs the Breakout program. */
 	public void run() { 
-		double BRICK_SEP=
-		/* You fill this in, along with any subsidiary methods */ 
-	public void CreateBrick (double x, double y, int NBRICKS_PER_ROW){
-		Grect Brick= new Grect (x, y BRICK_WIDTH,)
-				
-			X+(BRICK_WIDTH+BRICK_SEP)*NBRICK_ROWS
-			y+( BRICK_HEIGHT+BRICK_SEP)*
-				
+    //create brick by first set the coordinate 
+	int x=getWidth()-((APPLICATION_WIDTH)-BRICK_WIDTH);
+	int y =getHeight ()- ((APPLICATION_HEIGHT)-BRICK_Y_OFFSET );
+	///insert the statement for  the row 
+	for(int row=0; row<NBRICK_ROWS;row++){
+	// insert the statement for the row 
+	for(int column=0; column<NBRICKS_PER_ROW;column++);
+	
+	
+	
 			
+		
+		
+		
+	}
+	
+	 
 	}
 		
-
 	}
 
-}
+
+
