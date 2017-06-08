@@ -66,8 +66,8 @@ public class Breakout extends GraphicsProgram {
 		
 	
     //create brick by first set the coordinate 
-	int x=getWidth()-((APPLICATION_WIDTH)-BRICK_WIDTH);
-	int y = getHeight() -((APPLICATION_HEIGHT)-BRICK_HEIGHT);
+	int x= 2;
+	int y = BRICK_Y_OFFSET;
 	
 	///insert the statement for  the row 
 	for(int row=0; row<NBRICK_ROWS;row++){
