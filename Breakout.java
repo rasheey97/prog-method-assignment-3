@@ -63,9 +63,12 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
  //Runs the Breakout program. 
 	public void run() { 
+		getPaddle();	
+		//getBricks();
 		
 	
-    //create brick by first set the coordinate 
+    //create brick by first set the coordinate
+	Private void getBricks(){
 	int x= 2;
 	int y = BRICK_Y_OFFSET;
 	
@@ -85,7 +88,7 @@ public class Breakout extends GraphicsProgram {
 	y+= BRICK_HEIGHT+BRICK_SEP ;
 	x=BRICK_SEP/2;
 	}
-		getPaddle();
+	
 		
 			
 		}
