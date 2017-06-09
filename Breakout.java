@@ -83,7 +83,7 @@ public class Breakout extends GraphicsProgram {
 	BRICKS.setFilled(true);
 	add (BRICKS);
 	}			
-	y+=BRICK_HEIGHT+BRICK_SEP;
+	//y+=BRICK_HEIGHT+BRICK_SEP;
 	//x+= BRICK_SEP/2;		
 	
 	x = row * (BRICK_WIDTH+BRICK_SEP) ;
