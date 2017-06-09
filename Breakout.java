@@ -64,12 +64,15 @@ public class Breakout extends GraphicsProgram {
  //Runs the Breakout program. 
 	public void run() { 
 		getPaddle();
+		getBRICKS();
 		
 		//getBricks();
 		
 	
     //create brick by first set the coordinate
 	//Private void getBricks(){
+	
+	private void getBRICKS(){
 	int x= 2;
 	int y;
 	
@@ -84,18 +87,34 @@ public class Breakout extends GraphicsProgram {
 	
 	GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
 	BRICKS.setFilled(true);
-	add (BRICKS);
+	
+	// ad color 
+	if(row<2){
+		BRICKS.setColor(Color.red);
+	}
+	else if(row<4){
+		BRICKS.setColor(Color.orange);
+	}
+	else if (row<6){
+		BRICKS.setColor(Color.yellow);
+	}
+	else if (row<8){
+		BRICKS.setColor(Color.green);
+	}
+	else if (row<10){
+		BRICKS.setColor(Color.cyan);
+	}
+	
+	add (BRICKS, x,y);
 	
 	}			
-	//y+=BRICK_HEIGHT+BRICK_SEP;
-	//x+= BRICK_SEP/2;		
+	
+	}	
 	}
 	
 	
 	
-	}
-	
-	
+
 	
 	
 	private void getPaddle(){
