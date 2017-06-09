@@ -93,7 +93,8 @@ public class Breakout extends GraphicsProgram {
 	x/=2;
 	
 	
-	 
+	}
+	}
 	
 	
 	
@@ -108,7 +109,7 @@ public class Breakout extends GraphicsProgram {
 
 }
 
-	}}
+	
 	 
 	
 		
