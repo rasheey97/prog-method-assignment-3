@@ -87,9 +87,9 @@ public class Breakout extends GraphicsProgram {
 		
 	
 		
-	
-	x+=NBRICK_ROWS+BRICK_SEP;
 	}
+	x+=NBRICK_ROWS+BRICK_SEP;
+	
 	y+=NBRICKS_PER_ROW+BRICK_SEP;
 	x=2;
 	
@@ -112,8 +112,6 @@ public class Breakout extends GraphicsProgram {
 
 	
 	 
-}
-		
 	
 
 
