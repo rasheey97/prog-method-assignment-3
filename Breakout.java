@@ -72,7 +72,7 @@ public class Breakout extends GraphicsProgram {
 	//Private void getBricks(){
 	
 	
-	int x= 100;
+	int x=0;
 	int y;
 	
 	///insert the statement for  the row 
