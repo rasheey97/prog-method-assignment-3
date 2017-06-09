@@ -71,7 +71,7 @@ public class Breakout extends GraphicsProgram {
     //create brick by first set the coordinate
 	//Private void getBricks(){
 	int x= 2;
-	int y = BRICK_Y_OFFSET;
+	int y;
 	
 	///insert the statement for  the row 
 	
@@ -79,8 +79,8 @@ public class Breakout extends GraphicsProgram {
 		
 	for (int column=1; column<NBRICKS_PER_ROW; column++ ){
 		
-	x = row * (BRICK_WIDTH+BRICK_SEP) ;
-	y = y + (column * (BRICK_HEIGHT + BRICK_SEP)); 
+	x = (row * (BRICK_WIDTH+BRICK_SEP)) ;
+	y = (column * (BRICK_HEIGHT + BRICK_SEP)); 
 	
 	GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
 	BRICKS.setFilled(true);
@@ -89,8 +89,6 @@ public class Breakout extends GraphicsProgram {
 	}			
 	//y+=BRICK_HEIGHT+BRICK_SEP;
 	//x+= BRICK_SEP/2;		
-	
-	
 	}
 	
 	
