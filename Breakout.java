@@ -72,14 +72,14 @@ public class Breakout extends GraphicsProgram {
 	//Private void getBricks(){
 	
 	
-	int x= 450;
-	int y=67;
+	int x ;
+	int y;
 	
 	///insert the statement for  the row 
 	
 	for(int row=0; row<NBRICK_ROWS; row++){
 		
-	for (int column=1; column<NBRICKS_PER_ROW+1; column++ ){
+	for (int column=0; column<NBRICKS_PER_ROW; column++ ){
 		
 	x = (row * (BRICK_WIDTH+BRICK_SEP)) ;
 	y = (column * (BRICK_HEIGHT + BRICK_SEP)); 
