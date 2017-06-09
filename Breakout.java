@@ -63,7 +63,8 @@ public class Breakout extends GraphicsProgram {
 /* Method: run() */
  //Runs the Breakout program. 
 	public void run() { 
-		getPaddle();	
+		getPaddle();
+		
 		//getBricks();
 		
 	
@@ -74,12 +75,18 @@ public class Breakout extends GraphicsProgram {
 	
 	///insert the statement for  the row 
 	for(int row=0; row<NBRICK_ROWS;row++){
- 
-	}
-	
-		
+		for (int column=0;column<BRICK_HEIGHT; column++ ){
+			 x = (getWidth()/2- BRICK_WIDTH/2);
+			y= (getHeight()- BRICK_Y_OFFSET -BRICK_HEIGHT);
+				GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
+					BRICKS.setFilled(true);
+					add (BRICKS);
+			}			
 			
 		}
+ 
+		}	
+	
 	private void getPaddle(){
 	int i = (getWidth()/2- PADDLE_WIDTH/2);
 	int k= (getHeight()- PADDLE_Y_OFFSET -PADDLE_HEIGHT);
