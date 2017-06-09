@@ -81,14 +81,14 @@ public class Breakout extends GraphicsProgram {
 	
 	GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
 	BRICKS.setFilled(true);
-	add (BRICKS);
+	add (BRICKS, x,y);
 			}			
 			
 		
 	
 		
 	}
-	x+=NBRICK_ROWS+BRICK_SEP;
+	x+=NBRICK_ROWS+BRICK_SEP ;
 	
 	y+=NBRICKS_PER_ROW+BRICK_SEP;
 	x=2;
@@ -100,11 +100,11 @@ public class Breakout extends GraphicsProgram {
 	
 	
 	private void getPaddle(){
-	int i = (getWidth()/2- PADDLE_WIDTH/2);
-	int k= (getHeight()- PADDLE_Y_OFFSET -PADDLE_HEIGHT);
+	double i = (getWidth()/2- PADDLE_WIDTH/2);
+	double k= (getHeight()- PADDLE_Y_OFFSET -PADDLE_HEIGHT);
 	GRect PADDLE = new GRect(i, k,PADDLE_WIDTH,PADDLE_HEIGHT);
 		PADDLE.setFilled(true);
-		add (PADDLE);
+		add (PADDLE,i,k);
 	
 	}
 
