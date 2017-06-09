@@ -62,7 +62,7 @@ public class Breakout extends GraphicsProgram {
 
 /* Method: run() */
  //Runs the Breakout program. 
-	public void run() { 
+	public void run() {  
 		getPaddle();
 	     
 		//getBricks();
@@ -72,7 +72,7 @@ public class Breakout extends GraphicsProgram {
 	//Private void getBricks(){
 	
 	
-	int x= 2;
+	int x= 1;
 	int y;
 	
 	///insert the statement for  the row 
