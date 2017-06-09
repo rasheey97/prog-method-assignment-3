@@ -64,7 +64,7 @@ public class Breakout extends GraphicsProgram {
  //Runs the Breakout program. 
 	public void run() { 
 		getPaddle();
-		getBRICKS();
+		
 		
 		//getBricks();
 		
@@ -72,7 +72,7 @@ public class Breakout extends GraphicsProgram {
     //create brick by first set the coordinate
 	//Private void getBricks(){
 	
-	private void getBRICKS(){
+	
 	int x= 2;
 	int y;
 	
@@ -111,7 +111,7 @@ public class Breakout extends GraphicsProgram {
 	
 	}	
 	}
-	}
+	
 	
 	
 
