@@ -72,8 +72,8 @@ public class Breakout extends GraphicsProgram {
 	//Private void getBricks(){
 	
 	
-	int x=0;
-	int y;
+	int x= 450;
+	int y=67;
 	
 	///insert the statement for  the row 
 	
