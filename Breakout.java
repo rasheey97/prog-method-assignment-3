@@ -64,8 +64,7 @@ public class Breakout extends GraphicsProgram {
  //Runs the Breakout program. 
 	public void run() { 
 		getPaddle();
-		
-		
+	     
 		//getBricks();
 		
 	
