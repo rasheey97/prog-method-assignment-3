@@ -89,10 +89,10 @@ public class Breakout extends GraphicsProgram {
 	BRICKS.setFilled(true);
 	
 	// ad color 
-	if(column<2){
+	if(column<=2){
 		BRICKS.setColor(Color.red);
 	}
-	else if(column<4){
+	else if(column == 3 || column==4){
 		BRICKS.setColor(Color.orange);
 	}
 	else if (column<6){
