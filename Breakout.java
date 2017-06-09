@@ -78,14 +78,14 @@ public class Breakout extends GraphicsProgram {
 	for(int row=0; row<NBRICK_ROWS;row++){
 		
 	for (int column=0;column<NBRICKS_PER_ROW; column++ ){
-		
+	
 	GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
 	BRICKS.setFilled(true);
 	add (BRICKS);
 			}			
 			
 		
- 
+	
 		
 	
 	x+=NBRICK_ROWS+BRICK_SEP;
@@ -108,11 +108,11 @@ public class Breakout extends GraphicsProgram {
 	
 	}
 
-}
+
 
 	
 	 
-	
+}
 		
 	
 
