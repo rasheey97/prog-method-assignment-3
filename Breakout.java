@@ -80,8 +80,8 @@ public class Breakout extends GraphicsProgram {
 	for (int column=0;column<NBRICKS_PER_ROW; column++ ){
 		
 	GRect BRICKS = new GRect (x, y,BRICK_WIDTH,BRICK_HEIGHT);
-					BRICKS.setFilled(true);
-					add (BRICKS);
+	BRICKS.setFilled(true);
+	add (BRICKS);
 			}			
 			
 		}
@@ -90,7 +90,8 @@ public class Breakout extends GraphicsProgram {
 	
 	x+=(NBRICK_ROWS+BRICK_SEP);
 	y+=(BRICK_HEIGHT+BRICK_SEP);
-	x/=2;
+	=x/2; 
+	 
 	
 	private void getPaddle(){
 	int i = (getWidth()/2- PADDLE_WIDTH/2);
