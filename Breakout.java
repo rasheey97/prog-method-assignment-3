@@ -104,7 +104,7 @@ public class Breakout extends GraphicsProgram {
 		BRICKS.setColor(Color.cyan);
 	}
 	
-
+       add(BRICKS,x,y);
 	
 	}			
 	
