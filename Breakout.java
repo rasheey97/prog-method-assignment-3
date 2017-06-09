@@ -88,14 +88,14 @@ public class Breakout extends GraphicsProgram {
  
 		
 	
-	x+=(NBRICK_ROWS+BRICK_SEP)*row;
+	x+=(NBRICK_ROWS+BRICK_SEP);
 	y+=( NBRICKS_PER_ROW+BRICK_SEP);
-	x=2;
+	x/=2;
 	
 	
 	 
-	}
-	}
+	
+	
 	
 	private void getPaddle(){
 	int i = (getWidth()/2- PADDLE_WIDTH/2);
@@ -108,7 +108,7 @@ public class Breakout extends GraphicsProgram {
 
 }
 
-	
+	}}
 	 
 	
 		
