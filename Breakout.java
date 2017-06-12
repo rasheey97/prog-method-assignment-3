@@ -64,7 +64,7 @@ public class Breakout extends GraphicsProgram {
  //Runs the Breakout program. 
 	public void run() {  
 		getPaddle();
-	     
+		addMouseListeners();
 		//getBricks();
 		
 	
@@ -120,12 +120,34 @@ public class Breakout extends GraphicsProgram {
 	GRect PADDLE = new GRect(i, k,PADDLE_WIDTH,PADDLE_HEIGHT);
 		PADDLE.setFilled(true);
 		add (PADDLE,i,k);
-	addMouseListeners();
-	}
+	
+   }
+   public void mouseMoved(MouseEvent e){
+	   private void paddle(){
+	 //making the mouse track the paddle
+		
+			/* The mouse tracks the middle point of the paddle. 
+			 * If the middle point of the paddle is between half paddle width of the screen
+			 * and half a paddle width before the end of the screen, 
+			 * the x location of the paddle is set at where the mouse is minus half a paddle's width, 
+			 * and the height remains the same
+*/
+	   
+	   double y = (getHeight() - PADDLE_Y_OFFSET - PADDLE_HEIGHT);
+		if (e.getX() >= 0 && e.getX() < (getWidth() - PADDLE_WIDTH)){
+		paddle.setLocation(e.getX(), y);
+		} else if (e.getX() > WIDTH) {
+			paddle.setLocation(WIDTH, y);
+
+	   
+	   
+		}
+	   
+   }
 
 
-
-	}
+   }
+}
 	 
 	
 
